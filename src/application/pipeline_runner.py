@@ -188,7 +188,7 @@ def ensure_ocr_pdf(
 
     command = ["ocrmypdf"]
     if skip_text:
-        command.append("--skip-text")
+        command.append("--force-ocr")
 
     command.extend([str(input_path), str(resolved_output)])
 
